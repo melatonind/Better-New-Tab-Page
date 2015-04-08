@@ -1,0 +1,176 @@
+.row {
+	margin-left:0px;
+	margin-right:0px;
+}
+
+.comment {
+	margin-top: -5px;
+	font-style: oblique;
+	text-overflow: ellipsis;
+	/* Required for text-overflow to do anything */
+	white-space: nowrap;
+	overflow: hidden;
+	font-size: small;
+}
+
+.jumbotron {
+	text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+body {
+	animation: fadein 2s;
+	-moz-animation: fadein 2s; /* Firefox */
+	-webkit-animation: fadein 2s; /* Safari and Chrome */
+	-o-animation: fadein 2s; /* Opera */
+	background: 
+		radial-gradient(circle, transparent 20%, #F2F2F2 20%, #F2F2F2 80%, transparent 80%, transparent),
+		radial-gradient(circle, transparent 20%, #F2F2F2 20%, #F2F2F2 80%, transparent 80%, transparent) 50px 50px,
+		linear-gradient(#FAFAFA   8px, transparent 8px) 0 -4px,
+		linear-gradient(90deg, #FAFAFA   8px, transparent 8px) -4px 0;
+	background-color: #F2F2F2;
+	background-size:100px 100px, 100px 100px, 50px 50px, 50px 50px;
+	padding-top: 40px; 
+}
+
+@keyframes fadein {
+	from {
+		opacity:0;
+	}
+	to {
+		opacity:1;
+	}
+}
+@-moz-keyframes fadein { /* Firefox */
+	from {
+		opacity:0;
+	}
+	to {
+		opacity:1;
+	}
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+	from {
+		opacity:0;
+	}
+	to {
+		opacity:1;
+	}
+}
+@-o-keyframes fadein { /* Opera */
+	from {
+		opacity:0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.list-group-item {
+	background-color:rgba(256,256,256,0.5);
+}
+
+.heading {
+	padding: 5 0 5 30;
+}
+
+a.linky {
+	color: white;
+}
+
+a.linky:hover {
+	color: white;
+	text-decoration: none;
+}
+
+.twitch {
+	background-color: rgb(100, 65, 165);
+}
+
+.hacker {
+	background-color: rgb(255, 102, 0);
+}
+
+.title h4 {
+	color: pink;
+}
+
+
+
+
+/*
+  Docs at http://http://simpleweatherjs.com
+
+  Look inspired by http://www.degreees.com/
+  Used for demo purposes.
+
+  Weather icon font from http://fonts.artill.de/collection/artill-weather-icons
+
+*/
+
+@font-face {
+    font-family: 'weather';
+    src: url('fonts/artill_clean_icons-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+f {
+	font-family: weather;
+	font-size: 60px;
+	margin-top: -50px;
+	padding-right: 10px;
+}
+
+#weather {
+	margin-top: -15px;
+}
+
+.icon-0:before { content: ":"; }
+.icon-1:before { content: "p"; }
+.icon-2:before { content: "S"; }
+.icon-3:before { content: "Q"; }
+.icon-4:before { content: "S"; }
+.icon-5:before { content: "W"; }
+.icon-6:before { content: "W"; }
+.icon-7:before { content: "W"; }
+.icon-8:before { content: "W"; }
+.icon-9:before { content: "I"; }
+.icon-10:before { content: "W"; }
+.icon-11:before { content: "I"; }
+.icon-12:before { content: "I"; }
+.icon-13:before { content: "I"; }
+.icon-14:before { content: "I"; }
+.icon-15:before { content: "W"; }
+.icon-16:before { content: "I"; }
+.icon-17:before { content: "W"; }
+.icon-18:before { content: "U"; }
+.icon-19:before { content: "Z"; }
+.icon-20:before { content: "Z"; }
+.icon-21:before { content: "Z"; }
+.icon-22:before { content: "Z"; }
+.icon-23:before { content: "Z"; }
+.icon-24:before { content: "E"; }
+.icon-25:before { content: "E"; }
+.icon-26:before { content: "3"; }
+.icon-27:before { content: "a"; }
+.icon-28:before { content: "A"; }
+.icon-29:before { content: "a"; }
+.icon-30:before { content: "A"; }
+.icon-31:before { content: "6"; }
+.icon-32:before { content: "1"; }
+.icon-33:before { content: "6"; }
+.icon-34:before { content: "1"; }
+.icon-35:before { content: "W"; }
+.icon-36:before { content: "1"; }
+.icon-37:before { content: "S"; }
+.icon-38:before { content: "S"; }
+.icon-39:before { content: "S"; }
+.icon-40:before { content: "M"; }
+.icon-41:before { content: "W"; }
+.icon-42:before { content: "I"; }
+.icon-43:before { content: "W"; }
+.icon-44:before { content: "a"; }
+.icon-45:before { content: "S"; }
+.icon-46:before { content: "U"; }
+.icon-47:before { content: "S"; }

@@ -1,0 +1,202 @@
+<html>
+	<head>
+		<title>
+		\(^w^) mew mew (^w^)/
+		</title>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+		<link href="style.css" rel="stylesheet">
+		<link rel="icon" 
+			type="image/png" 
+			href="favicon.ico">
+	</head>
+	<body>
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand loading" href=""><i class="randomIcon fa fa-plus fa-spin fa-lg"></i></a>
+				</div>
+				
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				
+					<ul class="nav navbar-nav">
+						<li><a id="linkText" href="#" style="display:none"></a></li>
+					</ul>
+					<div class="nav navbar-nav navbar-right">
+						<div class="navbar-form">
+							<div class="btn-group btn-group">
+								<a href="https://rea.okta.com/login/do-login" class="linky btn btn-primary fa-lg" data-name="Okta login"><i class="fa fa-key"></i></a>
+								<a href="http://rea.to/idp" class="linky btn btn-primary fa-lg" data-name="Amazon"><i class="fa fa-cloud"></i></a>
+								<a href="https://git.realestate.com.au/consumer-data/" class="linky btn btn-primary fa-lg" data-name="Git - Consumer Data"><i class="fa fa-github-alt"></i></a>
+								<a href="master.ci.is-dev.realestate.com.au:8085/allPlans.action" class="linky btn btn-primary fa-lg" data-name="Bamboo"><i class="fa fa-building"></i></a>
+							</div>
+							<div class="btn-group btn-group">
+								<a href="https://youtube.com/" class="linky btn btn-info fa-lg" data-name="Youtubes"><i class="fa fa-youtube"></i></a>
+								<a href="http://www.facebook.com/messages" class="linky btn btn-info fa-lg" data-name="Trash"><i class="fa fa-trash"></i></a>
+								<a href="http://piratebay.se/" class="linky btn btn-info fa-lg" data-name="Licit activities"><i class="fa fa-cloud-download"></i></a>
+								<a href="https://www1.my.commbank.com.au/netbank/Portfolio/Home/Home.aspx?RID=QXyrVcI2EEC6eaIan9XWoQ&SID=jAVF6ev84%2fM%3d" class="linky btn btn-info fa-lg" data-name="My money"><i class="fa fa-bank"></i></a>
+							</div>
+							
+							<div class="btn-group btn-group">
+								<a href="http://codepen.io/melatonind/" class="linky btn btn-success fa-lg" data-name="A productive Sunday"><i class="fa fa-codepen"></i></a>
+								<a href="https://codeschool.com/" class="linky btn btn-success fa-lg" data-name="Code School"><i class="fa fa-code"></i></a>
+							</div>
+							<div class="btn-group btn-group">
+								<a href="https://www.google.com/calendar/render?pli=1" class="linky btn btn-warning fa-lg" data-name="Calendar"><i class="fa fa-calendar-o"></i></a>
+								<a href="https://mail.google.com/mail/u/0/#inbox" class="linky btn btn-warning fa-lg" data-name="Gmail"><i class="fa fa-paper-plane"></i></a>
+								<a href="https://keep.google.com/" class="linky btn btn-warning fa-lg" data-name="Keep"><i class="fa fa-lightbulb-o"></i></a>
+								<a href="https://www.blogger.com/" class="linky btn btn-warning fa-lg" data-name="Blog"><i class="fa fa-pencil"></i></a>
+								<a href="https://plus.google.com/photos/yourphotos" class="linky btn btn-warning fa-lg" data-name="Pikchas"><i class="fa fa-image"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+			
+		<div class="jumbotron container-fluid">
+			<div class="row">
+				<div class="col-sm-4 col-sm-offset-1">
+					<h2 class="randomWord"></h2>
+					<h4 class="randomDesc"></h4>
+				</div>
+				<div class="col-sm-3 text-right">
+					<div id="weather"></div>
+				</div>
+				<div class="col-sm-3">
+					<h2><span id="time"></span></h2>
+					<h4>
+						<span id="day"></span></br>
+						<span id="date"></span>
+					</h4>
+				</div>
+			</div>
+		</div>
+			
+			
+		<div class="container-fluid">
+			<div class="col-lg-1 hidden-sm"></div>
+			<div class="list-group col-sm-3" id="twitchStuff">
+				<div class="list-group-item twitch heading">
+					<h4><a class="linky" href="http://www.twitch.tv"><i class="fa fa-twitch"></i> Twitch</a></h4>
+				</div>
+				<div class="list-group-item">
+					<div class="liveData row">
+					</div>
+				</div>
+			</div>
+			<script type="text/template" id="story-template">
+
+				<div class="list-group-item row"><div class="col-xs-2">
+        			<a  href="<%= story_url %>"><img class="img-thumbnail" src="<%= thumbnail_url %>" style="border:1px solid #dddddd; padding: 0px;">
+				</div>
+    			<div class='col-xs-10'>
+    				<h5>
+    					<%= title %></a>
+	    				<small> (<%= domain %>)</small></h4>
+	    					<div class="<%= story_id %> comment"></div>
+	    				<small>
+    				</h5>
+    				<div class='" + story.story_id + " comment'></div>
+    				<h5><small>
+ 		   					<%= score %> points | <%= time %> | 
+ 		   					<% if (comment_length > 1) { %>
+ 		   					<a href="<%= comments_url %>"> <%= comment_length %> comments</a>
+ 		   					<% } else if (comment_length == 1) { %>
+ 		   						<a href="<%= comments_url %>"> 1 comment</a>
+	   						<% } else { %>
+	   							<a href="<%= comments_url %>">Discuss</a>
+	   						<% } %>
+   					</small></h5>
+				</div>
+
+			</script>
+
+			<div class="list-group col-sm-9 col-lg-7">
+				<div class="hackerNews">
+					<div class="list-group-item hacker heading">
+						<h4><a class="linky" href="https://news.ycombinator.com"><i class="fa fa-hacker-news"></i> Hacker News</a></h4>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="appendData col-sm-12 row">
+			</div>
+		</div>
+	</body>
+	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/moment.min.js"></script>
+	<script src="js/jquery.simpleWeather.min.js"></script>
+	<script src="randomicon.js"></script>
+	<script src="randomword.js"></script>
+	<script src="twitch.js"></script>
+	<script src="hackernews.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+	
+	<script>
+		// Menu hover
+		$(".linky").hover(
+			function() {
+				$("#linkText").html($(this).data("name")).show();
+			}, function() {
+				$("#linkText").html("").hide();
+			}
+		);
+		
+		// Icon hover	
+		$(".randomIcon").hover(
+			function() {
+				$(this).addClass("fa-spin");
+			}, function() {
+				$(this).removeClass("fa-spin");
+			}
+		);
+		
+		// Time
+		setInterval(function() {
+			$("#time").html(moment().format('h:mm:ss a'))
+		}, 1000);
+		$("#day").html(moment().format('dddd'));
+		$("#date").html(moment().format('MMMM, Do YYYY'));
+		
+		// Weather
+		// Docs at http://simpleweatherjs.com
+		$(document).ready(function() {
+		  $.simpleWeather({
+			location: 'Carindale, QLD',
+			woeid: '',
+			unit: 'c',
+			success: function(weather) {
+				html = '<h3><f class="icon-'+weather.code+'"></f>'+weather.temp+'&deg;'+weather.units.temp+'</h3>';
+				$("#weather").html(html);
+			},
+			error: function(error) {
+				$("#weather").html('<p>'+error+'</p>');
+			}
+		  });
+		});
+		
+		// Icon reload indicator
+		$(window).bind("load", function() {
+		    $(".fa-spin").removeClass("fa-spin");
+		    
+			if ($(".liveElement").length) {
+				console.log("yes");
+			} else {
+				console.log("no");
+				$(".liveData").html("Currently no one is streaming.");
+			}
+		});
+		
+		// Reload page @ 5 mins
+		var interval = 5*60*1000;
+		setInterval(function() {
+			window.location.reload();
+		}, interval);
+	</script>
+		
+</html>
+
